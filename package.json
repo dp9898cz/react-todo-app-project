@@ -9,7 +9,9 @@
     "lint": "tsc",
     "preview": "vite preview",
     "lint:check": "eslint 'src/**/*.{ts,tsx}'",
-    "lint-fix": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint-fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
